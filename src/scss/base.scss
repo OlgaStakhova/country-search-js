@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $main-font-family;
+  background-color: $first-page-color;
+  font-size: 1.4rem;
+  color: $first-font-color;
+}
+
+h2 {
+  font-size:1.6rem;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  @media screen and (max-width: $mobile-bp-max) {
+    width: $mobile-w;
+  }
+
+  @media screen and (min-width: $mobile-two-bp-min) {
+    width: $mobile-two-w;
+  }
+
+  @media screen and (min-width: $tablet-bp-min) {
+    width: $tablet-w;
+  }
+  
+  @media screen and (min-width: $desktop-bp-min) {
+    width: $desktop-w;
+  }
+}
+
+.section-title {
+  font-size: 1.4rem;
+  color:grey;
+  @media screen and (min-width: $tablet-bp-min) {
+    font-size: 1.6rem;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    font-size: 1.8rem;
+  }
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hiden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  bottom: 0px;
+  padding: 0px;
+  word-spacing: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
