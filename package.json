@@ -14,12 +14,12 @@
     "url": "git+https://github.com/test/test"
   },
   "keywords": [],
-  "author": "Artur Stahov <vtemy.at.ua@gmail.com>",
+  "author": "Olga Stakhova",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/test/test/issues"
   },
-  "homepage": "https://test.github.io/test",
+  "homepage": "https://olgastakhova.github.io/gallery-js-pixabay/",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
